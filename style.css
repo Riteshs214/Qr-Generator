@@ -84,6 +84,7 @@ select {
 }
 
 .qr-body {
+     width: 100%;
     display: grid;
     place-items: center;
     padding: 20px;
@@ -97,6 +98,19 @@ select {
     border: 0.5px solid var(--border-color);
     border-radius: var(--border-radius);
 }
+.qr-body img,
+.qr-body canvas {
+    width: 100% !important;     
+    height: auto !important;    
+    max-width: 100%;           
+    max-height: auto;
+    padding: 15px;
+    margin-block: 10px;
+    border: 0.5px solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: block;
+}
+
 @media screen and (max-width:520px){
     .box{
         width: 80%;
